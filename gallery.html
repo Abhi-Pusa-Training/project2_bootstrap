@@ -1,0 +1,239 @@
+<!doctype html>
+<html>
+<head>
+  <title>Welcome to future space</title>
+  <meta name="description" content="">
+
+  <!-- Mobile viewport optimized -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+
+
+  <!-- Bootstrap CSS -->
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="css/bootstrap-glyphicons.css" rel="stylesheet"/>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Rancho">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lobster">
+  <!-- Custom CSS -->
+  <link href="css/styles.css" rel="stylesheet">
+
+
+  <!-- Include Modernizr in the head, before any other Javascript -->
+  <script src="js/modernizr-2.6.2.min.js"></script>
+
+</head>
+<body>
+
+
+  <div class="container" id="main">
+    <div class="navbar navbar-default">
+      <div class="container">
+          <!--img src="images/spaceX.jpg" alt="Space Logo" class="img-circle pull-left" style="left-margin:10px"/-->
+
+          <div class="navbar-header" id="header_nav">
+            <a class="navbar-brand" href="/"><img src="images/spaceX.jpg" alt="Space Logo" height="50px"></a>
+
+          </div><!--Nav bar ends here-->
+
+          <!--button that will pop up when the nav bar collapse-->
+          <button class="navbar-toggle collapsed" data-target=".contain-nav" data-toggle="collapse" type="button">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button><!--Button closes here-->
+
+          <div class="collapse navbar-collapse contain-nav">
+            <ul class="nav navbar-nav" id="navigation-items">
+              <li>
+                <a href="index.html"><span class="glyphicon glyphicon-home"></span>&nbsp;Home</a>
+              </li>
+              <li class="active">
+                <a href="gallery.html"><span class="glyphicon glyphicon-picture"></span>&nbsp;Gallery</a>
+              </li>
+              <li>
+                <a href="explorerx_tv.html"><span class="glyphicon glyphicon-phone"></span>&nbsp;ExplorerX TV</a>
+              </li>
+              <li>
+                <a href="#"><span class="glyphicon glyphicon-scale"></span>&nbsp;Follow Explorer X</a>
+              </li>
+              <li>
+                <a href="about.html"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;About</a>
+              </li>
+              <li>
+                <a href="scheme.html"><span class="glyphicon glyphicon-eye-open"></span>&nbsp;ExplorerX Audience</a>
+              </li>
+            </ul>
+
+            <ul class="nav navbar-nav account_setting pull-right">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <span class="glyphicon glyphicon-user"></span><b>&nbsp;My Account</b><strong class="caret"></strong>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#"><span class="glyphicon glyphicon-wrench"></span>&nbsp;Setting</a></li>
+                  <li><a href="#my_modal" role="button" data-toggle="modal"><span class="glyphicon glyphicon-pushpin"></span>&nbsp;Register</a></li>
+                  <li><a href="#"><span class="glyphicon glyphicon-refresh"></span>&nbsp;Update Profile</a></li>
+                  <hr>
+                  <li><a href="#"><span class="glyphicon glyphicon-open"></span>&nbsp;Sign Out</a></li>
+                </ul>
+              </li><!--end of list items of the menu-->
+            </ul><!--end of Navbar-->
+          </div><!--End of responsive collapse-->
+
+      </div><!--container2 ends here-->
+    </div><!--Nav bar closes here-->
+  </div><!--Main content closes here-->
+
+  <div class="container gallary_main">
+  <div class="modal" id="my_modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal">&times;</button>
+          <h2>Enter your details for Registration</h2>
+      </div><!--end of modal content-->
+      <div class="modal-body">
+        <form class="form-horizontal">
+          <div class="form-group">
+            <label class="col-lg-2 control-label" for="inputName">Name</label>
+            <div class="col-lg-10">
+              <input class="form-control" id="inputName" placeholder="Name" type="text">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-lg-2 control-label" for="inputEmail">Email</label>
+            <div class="col-lg-10">
+              <input class="form-control" id="inputEmail" placeholder="Email" type="email">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-lg-2 control-label" for="inputMessage">Message</label>
+            <div class="col-lg-10">
+              <textarea class="form-control" id="inputMessage" placeholder="Message" rows="3"></textarea>
+              <button class="btn btn-success pull-right" type="submit">Send!</button>
+            </div>
+          </div>
+        </form><!--end of the form-->
+      </div><!--end of modal body-->
+      <div class="modal-footer">
+      </div><!--end of modal footer-->
+    </div><!--end of modal content-->
+    </div><!--end of modal dialog-->
+  </div><!--Modal window ends here-->
+
+
+  <h1 style="font-family:Rancho;font-size:50px">Gallery</h1>
+  <div class="row gallery">
+    <h3>Mountain Trekking</h3>
+    <div class="col-sm-4">
+      <img src="gallery/mountain1.jpg" alt="mountain trekking images" /></br></br>
+      <p><b>Mountain Image1</b></p>
+    </div><!--end of small column-->
+    <div class="col-sm-4">
+      <img src="gallery/mountain2.jpg" alt="mountain trekking images" /></br></br>
+      <p><b>Mountain Image2</b></p>
+    </div><!--end of small column-->
+    <div class="col-sm-4">
+      <img src="gallery/mountain3.jpg" alt="mountain trekking images" /></br></br>
+      <p><b>Mountain Image3</b></p></br>
+    </div><!--end of small column-->
+    <p>Gallery displaying all the selected images related to mountain trekking</p>
+  </div><!--end of complete row-->
+
+  <div class="row gallery">
+    <h3>Deep sea diving</h3>
+    <div class="col-sm-4">
+      <img src="gallery/sea1.jpg" alt="sea diving images" /></br></br>
+      <p><b>Deep sea dive Image1</b></p>
+    </div><!--end of small column-->
+    <div class="col-sm-4">
+      <img src="gallery/sea2.jpg" alt="sea diving images" /></br></br>
+      <p><b>Deep sea dive Image2</b></p>
+    </div><!--end of small column-->
+    <div class="col-sm-4">
+      <img src="gallery/sea3.jpg" alt="sea diving images" /></br></br>
+      <p><b>Deep sea dive Image3</b></p></br>
+    </div><!--end of small column-->
+    <p>Gallery displaying all the selected images related to deep ocean diving</p>
+  </div><!--end of complete row-->
+
+  <div class="row gallery">
+    <h3>Sky Diving</h3>
+    <div class="col-sm-4">
+      <img src="gallery/skydive1.jpg" alt="sky diving images" /></br></br>
+      <p><b>Sky dive Image1</b></p>
+    </div><!--end of small column-->
+    <div class="col-sm-4">
+      <img src="gallery/skydive2.jpg" alt="sky diving images" /></br></br>
+      <p><b>Sky dive Image1</b></p>
+    </div><!--end of small column-->
+    <div class="col-sm-4">
+      <img src="gallery/skydive3.jpg" alt="sky diving images" /></br></br>
+      <p><b>Sky dive Image1</b></p></br>
+    </div><!--end of small column-->
+    <p>Gallery displaying all the selected images related to sky diving</p>
+  </div><!--end of complete row-->
+
+  <footer>                                                    <!--footer of the page-->
+    <div class="">
+      <div class="">
+      <div class="col-sm-3 blog_det">
+        <p><b><u>Explore new horizons with us</u></b></p>
+        <p>Headquarter</br> Celebrity housing gate near valankani, Bangalore India 560100</p>
+        <p> Contact Details:</br>
+          PhoneNo:8105633283</br>
+          Email: abhinav.ashesh@spacex.com
+        </p>
+      </div>
+      <div class="col-sm-3 blog_det">
+        <p><b><u>Blog Rolls</u></b></p>
+          <a href="#">Documentation</a>
+          <a href="#">FeedBack</a>
+          <a href="#">Plugins</a>
+          <a href="#">Support Forum</a>
+          <a href="#">Themes</a>
+          <a href="#">WordPress blog</a>
+          <a href="#">Word Press Planet</a>
+      </div>
+      <div class="col-sm-3 blog_det">
+        <p><b><u>Recent Post</u></b></p>
+        <a href="#">Explore Himalaya</a>
+        <a href="#">Explore deepest-point of Indian Ocean</a>
+        <a href="#">Free fall from Sky</a>
+        <a href="#">Everest Tour</a>
+        <a href="#">K2 Mission</a>
+      </div>
+      <div class="col-sm-3 blog_det">
+        <a href="#"><img src="images/facebook.png" alt="facebook image" height=50px width=50px/></a>
+        <p><em>Like us on facebook</em></p>
+        <a href="#"><img src="images/sub.png" alt="Subscribe Image" height=50px width=90px/></a>
+        <p><em>Subsribe to our site</em></p>
+      </div>
+    </div><!--row closes here-->
+  </div><!--container closes here-->
+  </footer><!--footer closes here-->
+
+</div><!--Main content closes here-->
+
+
+
+
+<!-- All Javascript at the bottom of the page for faster page loading -->
+
+<!-- First try for the online version of jQuery-->
+<script src="http://code.jquery.com/jquery.js"></script>
+
+<!-- If no online access, fallback to our hardcoded version of jQuery -->
+<script>window.jQuery || document.write('<script src="js/jquery-1.8.2.min.js"><\/script>')</script>
+
+<!-- Bootstrap JS -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Custom JS -->
+<script src="js/script.js"></script>
+
+
+</body>
+</html>
