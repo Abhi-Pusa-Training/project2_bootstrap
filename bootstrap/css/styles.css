@@ -13,43 +13,7 @@ Notes:	 Hand coded for Udemy.com
 /* --------------------------------------
    Layout
    -------------------------------------- */
-#main_content
-{
-  text-align: center;
-}
 
-#main
-{
-  text-align: center;
-}
-
-#main  .container
-{
-  padding: 0px;
-}
-
-
-.left_bar1
-{
-  height:100%;
-  width:7%;
-  background-color: black;
-  position:fixed;
-  top:0px;
-  left:0px;
-  z-index:1;
-}
-
-.right_bar1
-{
-  height:100%;
-  width:7%;
-  background-color: black;
-  position:fixed;
-  top:0px;
-  right:0px;
-  z-index:1;
-}
 
 
 .nav_container a
@@ -103,13 +67,15 @@ Notes:	 Hand coded for Udemy.com
   color:#4d2600;
 }
 
+
+
 footer{
   height:25%;
   width:100%;
   overflow:hidden;
   clear:both;
-  padding:5px;
-  margin: 5px;
+  padding:0px;
+  margin: 0px;
   margin-top:10px;
   background-color: #d9d9d9;
 }
@@ -144,7 +110,7 @@ footer{
 {
   font-family: Rancho;
   font-size:50px;
-  color:black;
+  color:#ff0080;
   text-shadow: 5px 10px 10px #fff;
 }
 
@@ -152,7 +118,7 @@ footer{
 {
   font-family: Lobster;
   font-size:30px;
-  color:black;
+  color:#00ffff;
 }
 
 #my_carousel
@@ -195,15 +161,25 @@ footer{
   background-color:#f2f2f2 ;
 }
 
-.about2 p,.about3 p,.about4 p,#tab1 p,#tab2 p,#tab_cols p,#schemes p
-{
-    font-family: Lobster;
-    padding-left:15px;
+.container{
+  padding:0px;
 }
-.about2 h2,.about3 h2,.about4 h2,#tab1 h3,#tab2 h3,#tab_cols h2, #schemes h2
+
+.about2 p,.about3 p,.about4 p,#tab1 p,#tab2 p,#tab_cols p,#schemes p,.about1 p
+{
+    font-family: Raleway;
+    padding-left:15px;
+    font-size:15px;
+}
+.about1 h2,.about2 h2,.about3 h2,.about4 h2,#tab1 h3,#tab2 h3,#tab_cols h2, #schemes h2
 {
   font-family: Rancho;
   padding-left:15px;
+}
+
+#schemes .col-sm-4
+{
+  padding:0px;
 }
 
 #schemes h1
@@ -229,16 +205,7 @@ footer{
   padding:20px;
 }
 
-.about1 h2
-{
-  font-family: Rancho;
-  padding-left:15px;
-}
-.about1 p
-{
-    font-family: Lobster;
-    padding-left:15px;
-}
+
 
 
 .about1 img,.about3 img
@@ -269,9 +236,11 @@ footer{
 .gallery h3{
   font-family: Rancho;
   font-size:30px;
+  font-weight: bold;
 }
 
 .gallery p{
+  font-weight: bold;
   font-family: Labster;
   font-size:15px;
 }
@@ -295,9 +264,6 @@ footer{
 
 /* Portrait & landscape phone */
 @media (max-width: 480px) {
-  #tm_x{
-    padding-top: 40px;
-  }
   #tm_x object
   {
     width:150px;
@@ -307,14 +273,16 @@ footer{
   {
       width:100%;
   }
+
+  #schemes img{
+    height:150px;
+    width:150px;
+  }
 }
 
 /* Landscape phone to portrait tablet */
-@media (max-width: 625px) {
+@media (max-width:481px) and (max-width: 550px) {
 
-  #tm_x{
-    padding-top: 80px;
-  }
   #tm_x object
   {
     width:100%;
@@ -332,8 +300,8 @@ footer{
 
 
   #schemes img{
-    height:150px;
-    width:150px;
+    height:200px;
+    width:200px;
   }
 
   .about1 img,.about2 img, .about3 img, .about4 img{
@@ -350,9 +318,26 @@ footer{
   }
 }*/
 
+@media (min-width: 550px) and (max-width:768px){
+  .gallery img{
+    width:500px;
+    height:400px;
+  }
+
+  #tm_x object
+  {
+    width:500px;
+    height:300px;
+  }
+  #schemes img{
+    height:400px;
+    width:400px;
+  }
+
+}
 
 
-@media (min-width: 625px) and (max-width:999px){
+@media (min-width: 769px) and (max-width:999px){
   /* Styles */
   #tm_x object
   {
