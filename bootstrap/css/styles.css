@@ -50,8 +50,10 @@ Notes:	 Hand coded for Udemy.com
 
 #tab_cols
 {
-  background-color: #FFF;
-  margin-top:10px;
+  background-color: #f2f2f2;
+  margin:0px;
+  margin-top:15px;
+
 }
 
 .blog_det
@@ -156,20 +158,33 @@ footer{
 
 .about2,.about3,.about4
 {
+  margin: 0px;
   margin-top:20px;
-  padding:20px;
+  padding:0px;
   background-color:#f2f2f2 ;
 }
+
 
 .container{
   padding:0px;
 }
+
+.head1
+{
+  padding:0px;
+}
+
 
 .about2 p,.about3 p,.about4 p,#tab1 p,#tab2 p,#tab_cols p,#schemes p,.about1 p
 {
     font-family: Raleway;
     padding-left:15px;
     font-size:15px;
+}
+
+.schemes .panel
+{
+  border:0px;
 }
 .about1 h2,.about2 h2,.about3 h2,.about4 h2,#tab1 h3,#tab2 h3,#tab_cols h2, #schemes h2
 {
@@ -190,6 +205,8 @@ footer{
 {
   height:300px;
   width:320px;
+  padding: 20px 0px;
+  border: 3px solid grey;
 }
 
 #tab_cols img
@@ -200,9 +217,10 @@ footer{
 
 .about1
 {
+  margin: 0px;
   margin-top:5px;
   background-color:#f2f2f2 ;
-  padding:20px;
+  padding:0px;
 }
 
 
@@ -212,19 +230,32 @@ footer{
 {
   height:300px;
   width:350px;
-
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 3px solid grey;
 }
 
+body{
+  background-image: url(../../images/background.jpg);
+  background-attachment: fixed;
+}
 
 #schemes
 {
   text-align: center;
   margin-top:5px;
   background-color: #bfbfbf;
+  width:100%;
+  margin-left: 0px;
 }
 #schemes img{
   height:300px;
   width:300px;
+}
+
+.gallery{
+    background-color:#bfbfbf;
+    margin: 30px 0px;
 }
 
 .gallery img{
@@ -235,27 +266,42 @@ footer{
 
 .gallery h3{
   font-family: Rancho;
-  font-size:30px;
+  font-size:35px;
   font-weight: bold;
+  /*color:#FFEBCD;*/
+  color:#000;
 }
 
 .gallery p{
   font-weight: bold;
   font-family: Labster;
-  font-size:15px;
+  font-size:20px;
+  /*color:#FFEBCD;*/
+  color:#000000;
+}
+
+.nav-tabs
+{
+  background-color: #cce5ff;
 }
 
 #tm_x
 {
+  margin:0px;
   margin-top: 5px;
   text-align: center;
   border : 10px solid grey;
 }
 
+#tm_x .row{
+  margin: 0px;
+}
+
 #tm_x h1
 {
   font-family: Labster;
-  text-shadow: 5px 10px 10px #ccc;
+  text-shadow: 5px 10px 10px #fff;
+  color:#00ffff;
 }
 
 /* --------------------------------------
@@ -266,8 +312,8 @@ footer{
 @media (max-width: 480px) {
   #tm_x object
   {
-    width:150px;
-    height:250px;
+    width:250px;
+    height:200px;
   }
   #tab1 iframe
   {
@@ -278,15 +324,27 @@ footer{
     height:150px;
     width:150px;
   }
+
+  .gallery img
+  {
+    width:200px;
+    height:200px;
+  }
+
+  .about1 img,.about2 img, .about3 img, .about4 img{
+    height:200px;
+    width:200px;
+
+  }
 }
 
 /* Landscape phone to portrait tablet */
-@media (max-width:481px) and (max-width: 550px) {
+@media (min-width:481px) and (max-width: 550px) {
 
   #tm_x object
   {
-    width:100%;
-    height:400px;
+    width:370px;
+    height:250px;
   }
   #tab1 iframe
   {
@@ -294,8 +352,8 @@ footer{
   }
   .gallery img
   {
-    width:200px;
-    height:200px;
+    width:250px;
+    height:250px;
   }
 
 
@@ -305,8 +363,8 @@ footer{
   }
 
   .about1 img,.about2 img, .about3 img, .about4 img{
-    height:200px;
-    width:200px;
+    height:250px;
+    width:250px;
   }
 }
 

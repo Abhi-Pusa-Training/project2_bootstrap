@@ -25,7 +25,7 @@
 </head>
 <body>
 
-  <div class="container" id="main">
+  <header class="container" id="main">
     <nav class="navbar navbar-default">
       <div class="container">
           <!--img src="images/spaceX.jpg" alt="Space Logo" class="img-circle pull-left" style="left-margin:10px"/-->
@@ -82,16 +82,18 @@
 
       </div><!--container2 ends here-->
     </nav><!--Nav bar closes here-->
-  </div><!--Main content closes here-->
+  </header><!--Main content closes here-->
 
+<section>
 <div class="container myCarousel">
+  <section>
   <div class="row about1">
     <div class="col-sm-4">
       <img src="images/mountain_track.jpg" alt="Mountain Trcking Images" class="img-circle"/>
     </div>
     <div class="col-sm-8">
       <h2><b>Mountain Tracking</b></h2>
-      <p>India is a hub of various adventure activities like trekking, mountain climbing,
+      <article><p>India is a hub of various adventure activities like trekking, mountain climbing,
          motor biking and cycling in the Great Himalayan region. It is truly blessed with
          the natural beauty and various adventurous destinations with lots of breathtaking
          deep valleys and varied landscapes. That is the country honored with the label of being
@@ -110,13 +112,17 @@
         see the rich flora and fauna of the country. One can avail a lifetime of trekking
         experience and have some unforgettable experience.
       </p>
+    </article>
     </div>
   </div>
+</section><!--about1 section ends here-->
 
+<section>
   <div class="row about2">
     <div class="col-sm-8">
       <h2><b>Scuba Diving</b></h2>
-      <p>
+      <article>
+        <p>
         Scuba diving is a mode of underwater diving in which a scuba diver uses a self-contained
         underwater breathing apparatus (scuba) to breathe underwater.Unlike other modes of diving,
         which rely either on breath-hold or on breathing gas pumped from the surface, scuba divers
@@ -129,19 +135,23 @@
         to the feet, but external propulsion can be provided by a diver propulsion vehicle,
         or a sled pulled from the surface.
         </p>
+      </article>
     </div>
     <div class="col-sm-4">
       <img src="images/scuba_dive.jpg" alt="images of sea diving" class="img-circle">
     </div>
   </div><!--end of row-->
+</section><!--about2 section ends here-->
 
+<section>
   <div class="row about3">
     <div class="col-sm-4">
       <img src="images/water_sports.jpg"  alt="water_sports" class="img-circle" />
     </div>
     <div class="col-sm-8">
       <h2><b>Water Sports<b></h2>
-      <p>
+      <article>
+        <p>
         Skim the waves. Surf the seas. Float across the skies. The fabulous golden Goan coast
         is sprinkled with water sports excitements from windsurfing to paragliding.
         John Lucas, an Englishman, who first came to Goa in the early 70s like thousands of
@@ -152,12 +162,16 @@
         the best season for enjoying water sports in Goa is from October to May when the skies
         here are cloudless and blue, and the waters fairly placid.
         </p>
+      </article>
     </div>
   </div><!--End of row-->
+</section><!--about3 section ends here-->
 
+<section>
   <div class="row about4">
     <div class="col-sm-8">
-      <h2>Sky Diving</h2>
+      <h2><b>Sky Diving<b></h2>
+      <article>
       <p>
         Parachuting, or skydiving, is a method of exiting an aircraft and returning to Earth with
         the aid of gravity, then slowing down during the last part of the descent by using a parachute.
@@ -169,12 +183,15 @@
         balloons and aircraft in flight, and later as a way of delivering soldiers to the battlefield.
         Early competitions date back to the 1930s, and it became an international sport in 1952.
       </p>
+    </article>
     </div><!--End of column4-->
     <div class="col-sm-4">
       <img src="images/sky_diving.jpg" alt="sky diving image" class="img-circle"/>
     </div><!--end of column4-->
   </div><!--end of row-->
+</section><!--about4 section ends here-->
 
+<section>
   <div class="modal" id="my_modal">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -201,7 +218,7 @@
           <div class="form-group">
             <label class="col-lg-2 control-label" for="inputMessage">Message</label>
             <div class="col-lg-10">
-              <textarea class="form-control" id="inputMessage" placeholder="Message" rows="3"></textarea>
+              <textarea class="form-control" id="inputMessage" placeholder="Message" rows="3"></textarea><br><br>
               <button class="btn btn-success pull-right" type="submit">Send!</button>
             </div>
           </div>
@@ -212,14 +229,17 @@
       </div><!--end of modal content-->
     </div><!--end of modal dialog-->
   </div><!--Modal window ends here-->
+</section><!--modal section ends here-->
 
+<section>
   <div class="row" id="tab_cols">
+    <section>
     <div class="col-sm-6">
-      <h2>Our location details</h2>
+      <h2><b>Our location details<b></h2>
       <div class="tabbable">
         <ul class="nav nav-tabs">
-          <li><a href="#tab1" data-toggle="tab">section1</a></li>
-          <li><a href="#tab2" data-toggle="tab">section2</a></li>
+          <li class="active"><a href="#tab1" data-toggle="tab"><span style="color:#000">Bangalore location</span></a></li>
+          <li><a href="#tab2" data-toggle="tab"><span style="color:#000">Goa Location</span></a></li>
         </ul>
       </div><!--end of tabbable section-->
       <div class="tab-content">
@@ -229,9 +249,10 @@
           <p>Check the above map for locating us.</p>
         </div><!--end of tab pane-->
         <div class="tab-pane" id="tab2">
-          <h3>Goa</h3>
+          <h3><b>Goa</b></h3>
           <img src="images/goa.jpg" alt="our goa location" class="pull-left" height=100px width=100px/>
-          <p>Goa is a state located in the South western region of India;
+          <article>
+            <p>Goa is a state located in the South western region of India;
             it is bounded by the state of Maharashtra to the north, and by Karnataka to
             the east and south, while the Arabian Sea forms its western coast. It is India's
             smallest state by area and the fourth smallest by population. Goa is one of India's
@@ -250,14 +271,18 @@
             for its beaches, places of worship and world heritage architecture. It also has
             rich flora and fauna, owing to its location on the Western Ghats range, which is
             classified as a biodiversity hotspot.</p>
+          </article>
         </div><!--end of tab pane-->
       </div><!--end of tab content-->
     </div><!--end of column-->
+  </section><!--tabbale section ends here-->
 
+  <section>
     <div class="col-sm-6">
-      <h2>India</h2>
+      <h2><b>India</b></h2>
       <img src="images/india.jpg" alt="India image" class="pull-right" height="200" width="200"/>
-      <p>India is one of the world's oldest civilizations. The Indian culture, often labeled as an
+      <address>
+        <p>India is one of the world's oldest civilizations. The Indian culture, often labeled as an
          amalgamation of several various cultures, spans across the Indian subcontinent and has been
           influenced and shaped by a history that is several thousand years old. Throughout the history
            of India, Indian culture has been heavily influenced by Dharmic religions.They have been
@@ -276,20 +301,25 @@
                   with its rich culture, tradition, heritage, and monuments. It is also rich in its flora and fauna with some of
                    popular wildlife sanctuaries & national parks.
               </p>
+            </address>
     </div><!--end of column 6-->
+  </section><!--second section ends here-->
 
   </div><!--end of row-->
+</section>
 
   <footer>                                                    <!--footer of the page-->
     <div class="">
       <div class="">
       <div class="col-sm-3 blog_det">
-        <p><b><u>Explore new horizons with us</u></b></p>
-        <p>Headquarter</br> Celebrity housing gate near valankani, Bangalore India 560100</p>
-        <p> Contact Details:</br>
-          PhoneNo:8105633283</br>
-          Email: abhinav.ashesh@spacex.com
+        <address>
+          <p><b><u>Explore new horizons with us</u></b></p>
+          <p>Headquarter</br> Celebrity housing gate near valankani, Bangalore India 560100</p>
+          <p> Contact Details:</br>
+          <phone>PhoneNo:8105633283</phone></br>Email:
+          <email><a href="mailto:abhinav.ashesh@wipro.com">abhinav.ashesh@exp.com</email>
         </p>
+        </address><!--address bar closes here-->
       </div>
       <div class="col-sm-3 blog_det">
         <p><b><u>Blog Rolls</u></b></p>
@@ -320,6 +350,7 @@
   </footer><!--footer closes here-->
 
 </div><!--Main content closes here-->
+</section>
 
 
 
